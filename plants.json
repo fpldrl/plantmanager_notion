@@ -1,0 +1,141 @@
+{
+    "plants": [
+      {
+        "name": "Drachenbaum",
+        "id": 0,
+        "family": "Spargelgewächse",
+        "room": "Arbeitszimmer",
+        "waterneedinterval": 7,
+        "image": "IMG_5024.jpg"
+      },
+      {
+        "name": "Efeutute",
+        "id": 1,
+        "family": "Aronstabgewächse",
+        "room": "Arbeitszimmer",
+        "waterneedinterval": 9,
+        "image": "IMG_5023.jpg"
+      },
+      {
+        "name": "Schwertfarn",
+        "id": 2,
+        "family": "Lomariopsidaceae",
+        "room": "Badezimmer",
+        "waterneedinterval": 3,
+        "image": "IMG_5025.jpg"
+      },
+      {
+        "name": "Kolbenfaden",
+        "id": 3,
+        "family": "Aronstabgewächse",
+        "room": "Flur",
+        "waterneedinterval": 5,
+        "image": "IMG_5026.jpg"
+      },
+      {
+        "name": "Zierbanane",
+        "id": 4,
+        "family": "Bananengewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 6,
+        "image": "IMG_5027.jpg"
+      },
+      {
+        "name": "Piranhapflanze",
+        "id": 5,
+        "family": "Fleischfressende Pflanzen",
+        "room": "Arbeitszimmer",
+        "waterneedinterval": "∞",
+        "image": "IMG_5047.jpg"
+      },
+      {
+        "name": "Glücksfeder",
+        "id": 6,
+        "family": "Aronstabgewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 9,
+        "image": "IMG_5028.jpg"
+      },
+      {
+        "name": "Bogenhanf",
+        "id": 7,
+        "family": "Spargelgewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 6,
+        "image": "IMG_5029.jpg"
+      },
+      {
+        "name": "Grünlilie",
+        "id": 8,
+        "family": "Spargelgewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 7,
+        "image": "IMG_5030.jpg"
+      },
+      {
+        "name": "Goldfruchtpalme",
+        "id": 9,
+        "family": "Palmengewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 6,
+        "image": "IMG_5031.jpg"
+      },
+      {
+        "name": "Christusdorn",
+        "id": 10,
+        "family": "Wolfsmilchgewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 14,
+        "image": "IMG_5032.jpg"
+      },
+      {
+        "name": "Geldbaum",
+        "id": 11,
+        "family": "Dickblattgewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 10,
+        "image": "IMG_5033.jpg"
+      },
+      {
+        "name": "Chinesischer Geldbaum",
+        "id": 12,
+        "family": "Brennesselgewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 5,
+        "image": "IMG_5034.jpg"
+      },
+      {
+        "name": "Aloe",
+        "id": 13,
+        "family": "Grasbaumgewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 12,
+        "image": "IMG_5035.jpg"
+      },
+      {
+        "name": "Facheiro Kaktus",
+        "id": 14,
+        "family": "Kakteengewächse",
+        "room": "Arbeitszimmer",
+        "waterneedinterval": 50,
+        "image": "IMG_5041.jpg"
+      },
+      {
+        "name": "Sanseveria Cylindrica",
+        "id": 15,
+        "family": "Spargelgewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 8,
+        "image": "IMG_5042.jpg"
+      },
+      {
+        "name": "Peperomie",
+        "id": 16,
+        "family": "Pfeffergewächse",
+        "room": "Wohnzimmer",
+        "waterneedinterval": 8,
+        "image": "IMG_5044.jpg"
+      }
+    ]
+  }
+  
