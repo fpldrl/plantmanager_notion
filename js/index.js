@@ -1,9 +1,31 @@
 "use strict";
 
 let plantDisplay, steckbrief, wasserbedarf;
-const NAV_TABS = document.querySelectorAll("nav li");
 let jsonData;
+const NAV_TABS = document.querySelectorAll("nav li");
 let clickCounter = "";
+
+const CPS = () => {
+    fetch('/cps').then(
+        resp => console.log(resp)
+    ).catch(
+        err => console.log(err)
+    )
+}
+
+// Pflanzen-JSON auslesen
+const getData = () => {
+    fetch('/plants').then(data => console.log(data)).catch(
+        err => console.log(err)
+    )
+}
+
+// Serverkommunikation initialisieren
+const initServerComm = () => {
+    getData();
+    CPS()
+}
+initServerComm();
 
 // Klick-Event auf Zimmer in Navigation
 NAV_TABS.forEach(function (elem) {
@@ -19,7 +41,7 @@ NAV_TABS.forEach(function (elem) {
     });
 });
 
-// Pflanzen-JSON auslesen
+/*
 let xhr = new XMLHttpRequest();
 xhr.onload = function () {
     if (xhr.status !== 200) {
@@ -28,17 +50,17 @@ xhr.onload = function () {
     }
     if (xhr.responseType == "json") {
         // Wenn sie geparst sind, können wir mit response arbeiten
-        jsonData = xhr.response;
+        getData = xhr.response;
     } else {
         // Sicherheitshalber parsen und übergeben
-        jsonData = JSON.parse(xhr.responseText);
+        getData = JSON.parse(xhr.responseText);
     }
 };
 xhr.open("GET", "plants.json");
 xhr.responseType = "json";
 xhr.setRequestHeader("Accept", "application/json");
 xhr.send();
-
+ */
 // findPlant erstellt einen neuen DOM-Teilbaum mit leeren Platzhaltern für Bild, Steckbrief und Wasserinfo und hängt ihn in <main> ein
 function findPlant(event) {
     // main leeren:
@@ -219,7 +241,7 @@ function getClickDate(plants) {
             // console.log(event.target.id);
 
             // ...nehme die Pflanze an dieser Indexposition...  
-            let clickedPlant = jsonData.plants[id].name;
+            let clickedPlant = getData.plants[id].name;
             console.log(clickedPlant);
 
             // ...und schreibe Pflanze an der o.g. Indexposition + Datum in Webstorage
@@ -230,3 +252,4 @@ function getClickDate(plants) {
         });
     });
 };
+
